@@ -1,0 +1,15 @@
+provider.tf
+{
+provider "aws" {
+region ="ap-south-1"
+
+}
+main.tf
+resource "aws_instance" "web" {
+ami =
+instance_type =
+
+tags ={
+name = "helloworld"
+}
+}
